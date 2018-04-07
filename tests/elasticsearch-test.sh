@@ -1,6 +1,6 @@
 #!/bin/bash
 
-elasticsearch=${elasticsearch:-curl http://127.0.0.1:9200/_cat/health}
+elasticsearch=${elasticsearch:-http://127.0.0.1:9200/_cat/health}
 prefix=$(dirname $0)
 res=1
 RETRY_NB=240
