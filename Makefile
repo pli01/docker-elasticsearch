@@ -13,6 +13,7 @@ compose_args += $(shell [ -f  docker-compose.$(env).yml ] && echo "-f docker-com
 .PHONY: clean-image config
 all: stop rm up
 clean:
+	rm -rf Dockerfile.template Dockerfile.$(VERSION)
 	$(sudo) docker system prune -f
 .PHONY: config
 config:
