@@ -1,0 +1,3 @@
+#
+PACKAGENAME ?= docker-elasticsearch
+IMAGE_NAME ?= ci-tool-stack/elasticsearch
